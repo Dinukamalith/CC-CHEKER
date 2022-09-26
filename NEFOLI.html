@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<!-- saved from url=(0019)http://nefoli.live/ -->
+<html lang="en" style="" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths"><!--don't edit my index--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <link rel="icon" type="image/png" sizes="16x16" href="http://nefoli.live/assets/img/favicon.png">
+    <link rel="stylesheet" href="./NEFOLI_files/pace.css">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+   <!-- Required meta tags -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>CC CHECKER</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="./NEFOLI_files/materialdesignicons.min.css">
+    <link rel="stylesheet" href="./NEFOLI_files/vendor.bundle.base.css">
+   
+    <link rel="stylesheet" href="./NEFOLI_files/style.css">
+    <!-- End layout styles -->
+    <link rel="shortcut icon" href="http://nefoli.live/assets/images/favicon.ico">
+    <!-- CSS -->
+    <link href="./NEFOLI_files/css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./NEFOLI_files/material-design-iconic-font.min.css">
+    <link href="./NEFOLI_files/style.css" rel="stylesheet" type="text/css">
+    
+    <!-- Head Libs -->
+    <script src="./NEFOLI_files/modernizr.min.js.download"></script>
+    <script data-pace-options="{ &quot;ajax&quot;: false, &quot;selectors&quot;: [ &quot;img&quot; ]}" src="./NEFOLI_files/pace.min.js.download"></script>
+    <script>
+var myVar=setInterval(function(){myTimer()},1000);
+function myTimer() {
+    var d = new Date();
+    document.getElementById("horas").innerHTML = d.toLocaleTimeString();
+}
+</script>
+<script type="text/javascript">
+function Mudaestado(el) {
+        var display = document.getElementById(el).style.display;
+        if(display == "none")
+            document.getElementById(el).style.display = 'block';
+        else
+            document.getElementById(el).style.display = 'none';
+    }
+</script>
+</head>
+
+<body class="content-dark  pace-done"><div class="pace  pace-inactive"><div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
+  <div class="pace-progress-inner"></div>
+</div>
+<div class="pace-activity"></div></div>
+        <!-- /.site-sidebar -->
+        <main class="main-wrapper clearfix">
+            <!-- Page Title Area -->
+            <div class="row page-title clearfix">
+                <div class="page-title-left">
+                    <h6 class="page-title-heading mr-0 mr-r-5"><span>⟻ CHECKER ⟼</span></h6>
+
+                    <p class="page-title-description mr-0 d-none d-md-inline-block"></p>
+                </div>
+                <!-- /.page-title-left -->
+                
+                <!-- /.page-title-right -->
+            </div>
+            <!-- /.page-title -->
+            <!-- =================================== -->
+            <!-- Different data widgets ============ -->
+            <!-- =================================== -->
+            <div class="widget-list row">
+                
+                <!-- /.widget-holder -->
+                <div class="widget-holder widget-full-height widget-flex col-lg-6">
+                    <div class="widget-bg">
+                        <div class="widget-heading">
+                            <h5 class="widget-title"><span class="badge badge-white">[⍋] Stripe Gateway [⍋]</span></h5>
+                            <div class="widget-graph-info">
+                                <div class="dropdown"><a href="javascript:void(0)" class="dropdown-toggle text-muted fs-16" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
+                                    <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="http://nefoli.live/#">Action</a>  <a class="dropdown-item" href="http://nefoli.live/#">Another action</a>  <a class="dropdown-item" href="http://nefoli.live/#">Something else here</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.widget-graph-info -->
+                        </div>
+                        <!-- /.widget-heading -->  
+                        <div class="widget-body">
+                           
+
+                      <br>
+
+                                                    <p id="cvvapp"></p>
+
+                                             <br><br>    
+                            <button type="button" id="sh_cvv" onclick="Mudaestado(&#39;cvvapp&#39;);" class="btn btn-success" style="background-color: #a3a3f0; border-color:#a3a3f0"> Auth + Charge 1$ [ <span id="aprovada_conta">0</span> ]</button>                            
+                                                            
+
+                            <br>
+
+                            <p id="aprovadasapp"></p>
+
+                            <br><br>
+
+                            <button type="button" id="sh_rep" onclick="Mudaestado(&#39;reprovadasapp&#39;);" class="btn btn-danger" style="background-color: #020224; border-color:#020224">DEAD [ <span id="reprovada_conta">0</span> ]</button>
+
+                            <br>
+
+                            <p id="reprovadasapp"></p>
+                        </div>
+                        <!-- /.widget-body -->
+                    </div>
+                    <!-- /.widget-bg -->
+                </div>
+                <!-- /.widget-holder -->
+                <div class="widget-holder widget-full-content widget-full-height col-lg-6">
+                    <div class="widget-bg">
+                        <div class="widget-heading">
+                            <h5 class="widget-title"><span class="badge badge-white">FILL IN THE INFORMATION.</span></h5>
+                            <div class="widget-graph-info">
+                                <div class="dropdown"><a href="javascript:void(0)" class="dropdown-toggle text-muted fs-16" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
+                                    <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="http://nefoli.live/#">Action</a>  <a class="dropdown-item" href="http://nefoli.live/#">Another action</a>  <a class="dropdown-item" href="http://nefoli.live/#">Something else here</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.widget-graph-info -->
+                        </div>
+                        <!-- .widget-heading -->
+                        <div class="widget-body">
+                            <div class="container-fluid pd-20">
+                                <div class="row">
+                                    <div class="col">
+                                        
+
+                                    <textarea id="lista" placeholder="FORMAT: 0000000000000000|00|0000|000" class="form-control" style="resize:yes;outline:none;width:200; height:150px;"></textarea><br>
+
+                                    <button type="button" id="iniciar" onclick="start()" class="btn btn-success" style="background-color: #32CD32; border-color:#32CD32">Start</button> 
+                                    <button type="button" onclick="stop()" id="parar" class="btn btn-danger" style="background-color: #FF0000; border-color:#FF0000">Stop</button>
+
+                                    
+
+                                    <br><br>
+                                    <p><span class="badge badge-warning">RESULTS :-</span></p>
+                                   
+                                   
+
+                                    <small>
+                                
+                                    <span style="font-size: 13px;">
+
+                                        STATUS : <span class="bagde badge-pill badge-light" id="demo">CARREGUE A LISTA!</span>
+                                     
+                                     <br> 
+                                   
+                                  
+                                  
+                                  
+                                  CVV : <span id="CLIVE" class="badge badge-dark">0</span>      
+                                  DECLINED : <span id="CDIE" class="badge badge-danger">0</span>     
+
+                                    <br><br>
+                                          TESTED : <span id="testado" class="badge badge-success">0</span>     &nbsp;
+
+                                    TOTAL : <span id="carregada" class="badge badge-danger">0</span></span></small>
+                                    <br><br>
+
+                                                Time : <span class="badge badge-light" id="horas">11:08:38</span>
+
+                                    <br><br>
+
+                                
+
+
+                                 <!--    <p>Edited By :  <a target="_BLANK" href="https://www.youjizz.com/">𝕽𝖊𝖇𝖔𝖔𝖙 ♛</a></p>  -->
+
+
+                                            <!-- /.col-6 -->
+                                    </div>
+                                        <!-- /.row -->
+                                    </div>
+                                    <!-- /.col-lg-6 -->
+                                </div>
+                                <!-- /.row -->
+                            </div>
+                            <!-- /.container-fluid -->
+                        </div>
+                        <!-- /.widget-body -->
+                    </div>
+                    <!-- /.widget-bg -->
+                </div>
+                <!-- /.widget-holder -->
+            
+            <!-- /.widget-list -->
+            
+            <!-- /.card -->
+        
+        <!-- /.chat-panel -->
+    
+    <!-- /.content-wrapper -->
+    <!-- FOOTER -->
+    
+    <br>
+    <p style="text-align:center;"><aligh<span class="badge badge-light">
+        Modified By : xDora
+    </aligh<span></p>
+
+            <br><br>
+    <!--/ #wrapper -->
+    <!-- Scripts -->
+    <script src="./NEFOLI_files/jquery.min.js.download"></script>
+    <script src="./NEFOLI_files/theme.js.download"></script>
+    <script src="./NEFOLI_files/custom.js.download"></script>
+    <script src="./NEFOLI_files/jquery.js.download"></script>
+    <script src="./NEFOLI_files/jquery-ui.js.download"></script>
+    <script src="./NEFOLI_files/js.js.download"></script>
+
+
+</main></body></html>
